@@ -1,0 +1,156 @@
+@media (max-width: 1300px){
+    .container{
+        max-width: 1140px;
+    }
+}
+
+@media (max-width: 1200px){
+    body{
+        padding-top: 90px;
+    }
+    .container{
+            max-width: 968px
+    }
+}
+
+@media (max-width: 992px){
+    body{
+        padding-top: 80px;
+    }
+    .container{
+        max-width: 720px
+    }
+    .btn-header{
+        display: none;
+    }
+    .header{
+        &__link{
+            &:last-child{
+                margin-right: 0px;
+            }
+        }
+    }
+    .promo{
+        &__wrapper{
+            grid-template-columns: 300px 1fr;
+            grid-template-rows: minmax(500px, auto);
+        }
+        &__title{
+            font-size: 56px;
+        }
+        &__information{
+            padding:30px 30px 30px 0px;
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .container{
+        max-width: 100%;
+        padding-left: 16px;
+    }
+    .hamburger{
+        display: block;
+    }
+    .header{
+        &__navigation{
+            position: absolute;
+            top: 0;
+            right: -100%;
+            padding-top: 30px;
+            flex-direction: column;
+            align-items: flex-start;
+            height: 100vh;           
+        }
+        &__links{
+            width: 100%;
+            flex-direction: column;
+        }
+        &__link{
+            margin-top: 30px;
+            a{
+                font-weight: bold;
+            }
+        }
+    }
+    .btn-header{
+        display: block;
+        margin-top: 20px;
+        border: 2px solid $main-color;
+        background-color: transparent;
+        color: $main-color;
+    }
+    .mobile-menu{
+        width: 30%;
+        right: 0;
+        background-color: #fff;
+        transition: .5s all;
+        border-bottom: 2px solid $main-color;
+        padding-left: 15px;
+    }
+    .promo{
+        &__wrapper{
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(2, minmax(300px, auto));
+        }
+        &__image{
+            grid-column: 1/2;
+            grid-row: 1/2;
+            margin-left: -16px;
+        }
+    }
+    .title{
+        font-size: 30px;
+    }
+    .subtitle{
+        font-size: 20px;
+    }
+    .services{
+        &__wrapper{
+            grid-template: repeat(3, minmax(350px, auto)) / 0.5fr;
+            justify-content: center;
+            row-gap: 20px;
+        }
+    }
+}
+    
+   
+
+
+   
+    
+
+@media (max-width: 576px){
+    .container{
+        width: 100%;
+    }
+    .hamburger{
+        right: 50px;
+    }
+    .promo{
+        &__title{
+            font-size: 30px;
+        }
+        &__location{
+            font-size: 18px;
+        }
+    }
+    .services{
+        &__subtitle{
+            font-size: 14px;
+            max-width: 90%;
+        }
+        &__wrapper{
+            padding-right: 16px;
+            grid-template-columns: 1fr;
+        }
+    }
+    .mobile-menu{
+        width: 50vh;
+    }
+}
+      
+   
+    
+    
+

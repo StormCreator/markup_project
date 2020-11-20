@@ -1,0 +1,21 @@
+.btn{
+    width: 161px;
+    height: 46px;
+    border: 2px solid $main-color;
+    border-radius: 3px;
+    background-color: transparent;
+    color: $main-color;
+    font-weight: 600;
+    font-size: 16px;
+    &-header{
+        width: 116px;
+        height: 36px;
+        border: 2px solid #000000;
+        color: #000;
+        transition: .5s all;
+        &:hover{
+            color: $main-color;
+            border-color: $main-color;
+        }
+    }
+}
