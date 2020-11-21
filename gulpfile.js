@@ -86,7 +86,7 @@ gulp.task( 'iconfont', async () => {
         .pipe( gulp.dest( 'src/assets/fonts/iconFont/' ) )
 });
 
-gulp.task('default', gulp.parallel('watch', 'server', 'styles', 'scripts', 'fonts', 'icons', 'html', 'images', 'iconfont'));
+gulp.task('default', gulp.parallel('watch', 'server', 'styles', 'scripts', 'fonts', 'icons', 'html', 'iconfont', 'images' ));
 
 
 
