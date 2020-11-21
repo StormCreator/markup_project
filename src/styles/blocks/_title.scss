@@ -8,5 +8,20 @@
     font-weight: 400;
     font-size: 16px;
     color: #000;
+    line-height: 24.54px;
     max-width: 668px;
+}
+
+
+
+
+@media (max-width: 768px){
+    .title{
+        font-size: 30px;
+    }
+}
+@media (max-width: 576px){
+    .subtitle{
+        font-size: 14px;
+    }
 }

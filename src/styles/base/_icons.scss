@@ -1,0 +1,54 @@
+@font-face {
+	font-family: "icons";
+	src: url('../../fonts/iconFont/icons.eot');
+	src: url('../../fonts/iconFont/icons.eot?#iefix') format('eot'),
+		url('../../fonts/iconFont/icons.woff2') format('woff2'),
+		url('../../fonts/iconFont/icons.woff') format('woff'),
+		url('../../fonts/iconFont/icons.ttf') format('truetype'),
+		url('../../fonts/iconFont/icons.svg#icons') format('svg');
+}
+
+.icon:before {
+	font-family: "icons";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	/* speak: none; only necessary if not using the private unicode range (firstGlyph option) */
+	text-decoration: none;
+	text-transform: none;
+}
+
+
+.icon-coaches:before {
+	content: "\E001";
+}
+
+.icon-coffee:before {
+	content: "\E002";
+}
+
+.icon-emotions:before {
+	content: "\E003";
+}
+
+.icon-form:before {
+	content: "\E004";
+}
+
+.icon-happiness:before {
+	content: "\E005";
+}
+
+.icon-photos:before {
+	content: "\E006";
+}
+
+.icon-rooms:before {
+	content: "\E007";
+}
+
+.icon-star:before {
+	content: "\E008";
+}
