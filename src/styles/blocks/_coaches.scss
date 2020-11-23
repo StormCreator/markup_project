@@ -1,0 +1,52 @@
+.coaches{
+    min-height: 760px;
+    padding: 50px 0 100px 0;
+    &__subtitle{
+        margin-top: 24px;
+    }
+    &__wrapper{
+        margin-top: 43px;
+    }
+    .coach{
+        display: flex;
+        &__info{
+            padding: 43px 90px 43px 25px;
+        }
+        &__number{
+            font-weight: bold;
+            font-size: 16px;
+        }
+        &__title{
+            font-weight: bold;
+            font-size: 24px;
+            margin-top: 10px;
+        }
+        &__position{
+            display: block;
+            margin-top: 10px;
+            font-size: 16px;
+            font-weight: 400;
+        }
+        &__descr{
+            margin-top: 24px;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 153.4%;
+            color: $descr-color;
+            span{
+                display: inline-block;
+                margin-left: 10px;
+                font-size: 16px;
+                font-weight: 400;
+                color: #000;
+            }
+        }
+        &__button{
+            margin-top: 80px;
+            i{
+                font-size: 20px;
+                color: red;
+            }
+        }
+    }
+}

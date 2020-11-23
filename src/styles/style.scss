@@ -15,6 +15,7 @@ body{
 .container{
     max-width: 1300px;
     margin: 0 auto;
+    border: 1px solid green;
 }
 
 @import 'blocks/header';
@@ -24,6 +25,7 @@ body{
 @import 'blocks/title';
 @import 'blocks/services';
 @import 'blocks/offer';
+@import 'blocks/coaches';
 
 
 @media (max-width: 1300px){
