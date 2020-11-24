@@ -71,6 +71,9 @@
             grid-row: 1/2;
             margin-left: -16px;
         }
+        &__description{
+            font-size: 14px;
+        }
         &__btn{
             &:hover{
                 border-color: $main-color;

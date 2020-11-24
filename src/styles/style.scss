@@ -15,7 +15,6 @@ body{
 .container{
     max-width: 1300px;
     margin: 0 auto;
-    border: 1px solid green;
 }
 
 @import 'blocks/header';
@@ -60,6 +59,6 @@ body{
 
 @media (max-width: 576px){
     .container{
-        width: 100%;
+        max-width: 100%;
     }
 }

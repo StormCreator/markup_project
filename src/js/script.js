@@ -5,6 +5,7 @@ $(document).ready(function () {
 
     hamburger();
     slider();
+    
 });
 
 

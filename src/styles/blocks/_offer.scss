@@ -45,6 +45,11 @@
             gap: 80px 20px;
         }
     }
+    .sentence{
+        &__descr{
+            font-size: 13px;
+        }
+    }
 }
 
 @media (max-width: 576px){

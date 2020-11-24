@@ -1,16 +1,28 @@
 .coaches{
     min-height: 760px;
-    padding: 50px 0 100px 0;
+    padding: 50px 0;
     &__subtitle{
         margin-top: 24px;
     }
-    &__wrapper{
+    .slider{
         margin-top: 43px;
+        &__wrap{
+            width: 100%;
+        }
     }
     .coach{
-        display: flex;
+        display: grid;
+        grid-template: minmax(440px, auto) /  300px 1fr;
+        // width: 90%;
+        &__photo{
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
         &__info{
             padding: 43px 90px 43px 25px;
+            min-height: 440px;
         }
         &__number{
             font-weight: bold;
@@ -44,9 +56,121 @@
         &__button{
             margin-top: 80px;
             i{
-                font-size: 20px;
-                color: red;
+                font-size: 0px;
+                color: $main-color;
             }
         }
+    }
+}
+
+@media (max-width: 1300px){
+    
+    .coaches{
+        .coach{
+            &__descr{
+                span{
+                    display: block;
+                    margin: 10px 0 0 0;
+                }
+            }
+            &__info{
+                padding: 30px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px){
+    
+    .coaches{
+        .slider{
+            &__wrap{
+                margin-left: -50px;
+            }
+        }
+    }
+}
+
+@media (max-width: 992px){
+    .coaches{
+        .coach{
+            grid-template: minmax(440px, auto) / 1fr 1fr;
+            &__info{
+                padding-right: 0;
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 768px){
+    .slider{
+        &__wrap{
+            width: 268px;
+        }
+    }
+    .coaches{
+        .coach{
+            grid-template: repeat(2, minmax(300px, auto)) / 285px;
+            &__photo{
+                border-radius: 6px;
+                img{
+                    object-fit: cover;
+                }
+            }
+            &__info{
+                padding: 20px 30px 32px 16px;
+                position: relative;
+            }
+            &__number{
+                font-size: 12px;
+            }
+            &__title{
+                font-size: 18px;
+            }
+            &__position{
+                font-size: 13px;
+            }
+            &__descr{
+                font-size: 13px;
+                span{
+                    display: block;
+                    margin: 10px 0 0 0;
+                }
+            }
+            &__button{
+                margin-top: 0px;
+                width: 33px;
+                height: 33px;
+                border-radius: 50%;
+                position: absolute;
+                bottom: 16px;
+                right: 16px;
+                span{
+                    display: none;
+                }
+                i{
+                    height: 100%;
+                    font-size: 15px;                    
+                    &::before{
+                        vertical-align: text-bottom;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width: 576px){
+    .coaches{
+        .coach{
+            grid-template: 300px 280px / 0.97fr;
+            &__info{
+                padding-bottom: 0;
+            }
+        }
+        
     }
 }
