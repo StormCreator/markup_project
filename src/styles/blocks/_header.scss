@@ -12,12 +12,9 @@
         align-items: center;
         position: relative;
     }
-    &__logo{
+    &-logo{
         a{
-            font-weight: 700;
-            font-size: 18px;
             color: #000;
-            text-decoration: none;
         }
     }
     &__navigation{
@@ -61,8 +58,16 @@
             margin-right: 35px;
         }
     }
-
 }
+
+.logo{
+    a{
+        font-weight: 700;
+        font-size: 18px;
+        text-decoration: none;
+    }
+}
+
 
 
 @media (max-width: 992px){
