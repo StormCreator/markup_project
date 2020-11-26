@@ -4,7 +4,6 @@ function animation(){
             services = document.querySelectorAll('.service');
 
 
-    console.log(services);
 
     titles.forEach(item => {
         item.classList.add('wow', 'animate__animated', 'animate__fadeInUp');

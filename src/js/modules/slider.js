@@ -2,19 +2,15 @@ function slider(){
 
 
     $(".slider").on("init", function(event, slick){
-        // console.log(slick.slideCount);
-        // console.log(slick.currentSlide);
         $(".slick-count").text(`${parseInt(slick.currentSlide + 1)} of ${slick.slideCount/2}`);
     });
 
     $(".slider").on("afterChange", function(event, slick, currentSlide){
-        console.log(slick.currentSlide)
         if(currentSlide == 2){
             $(".slick-count").text(`${parseInt(slick.currentSlide)} of ${slick.slideCount/2}`);
         }else{
             $(".slick-count").text(`${parseInt((slick.currentSlide/2) + 1)} of ${slick.slideCount/2}`);
         }
-        console.log(`final ${slick.currentSlide/2}`)
     });
 
 
