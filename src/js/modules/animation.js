@@ -17,7 +17,7 @@ function animation(){
     {
         let duration = 1.2;
         services.forEach(service => {
-            service.classList.add('wow', 'animate__animated', 'animate__fadeInUpBig');
+            service.classList.add('wow', 'animate__animated', 'animate__fadeInUp');
             service.style.setProperty('--animate-duration', `${duration}s`);
             duration += 0.3;
         });
