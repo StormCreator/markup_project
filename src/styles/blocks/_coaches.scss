@@ -56,9 +56,17 @@
         }
         &__button{
             margin-top: 80px;
+            transition: .3s border-color, .3s color;
             i{
                 font-size: 0px;
                 color: $main-color;
+            }
+            p{
+                display: inline-block;
+            }
+            &:hover{
+                border-color: #000;
+                color: #000;
             }
         }
     }
@@ -180,7 +188,7 @@
                 font-size: 13px;
             }
             &__descr{
-                font-size: 13px;
+                font-size: 15px;
                 span{
                     display: block;
                     margin: 10px 0 0 0;
@@ -194,7 +202,7 @@
                 position: absolute;
                 bottom: 0px;
                 right: 16px;
-                span{
+                p{
                     display: none;
                 }
                 i{

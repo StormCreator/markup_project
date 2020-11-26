@@ -3,7 +3,6 @@
     padding: 100px 0 0 0;
     &__subtitle{
         margin-top: 24px;
-        line-height: 153.4%;
     }
     &__wrapper{
         margin-top: 30px;
@@ -28,12 +27,10 @@
             font-size: 24px;
         }
         &__descr{
-            span{
-                display: block;
-                margin-top: 8px;
-                font-weight: normal;
-                font-size: 16px;
-            }
+            display: block;
+            margin-top: 8px;
+            font-weight: normal;
+            font-size: 16px;
         }
     }
 }
@@ -50,13 +47,17 @@
 
 @media (max-width: 576px){
     .services{
-        &__subtitle{
-            font-size: 14px;
-            max-width: 90%;
-        }
         &__wrapper{
             padding-right: 16px;
             grid-template-columns: 1fr;
+        }
+        .service{
+            &__title{
+                font-size: 18px;
+            }
+            &__descr{
+                font-size: 15px;
+            }
         }
     }
 }

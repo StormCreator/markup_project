@@ -21,6 +21,7 @@
             }
         }
         &__descr{
+            display: block;
             margin-top: 15px;
             line-height: 24.54px;
         }
@@ -47,7 +48,7 @@
     }
     .sentence{
         &__descr{
-            font-size: 13px;
+            font-size: 15px;
         }
     }
 }
@@ -68,6 +69,7 @@
             &__descr{
                 margin: 10px auto 0 auto;
                 max-width: 140px;
+                font-size: 13px;
             }
         }
     }

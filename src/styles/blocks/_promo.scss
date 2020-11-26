@@ -27,6 +27,7 @@
         font-weight: 400;
         font-size: 16px;
         margin-top: 40px;
+        line-height: 24px;
         animation-delay: .7s;
         animation-duration: 1.2s;
     }
@@ -79,7 +80,7 @@
             margin-left: -16px;
         }
         &__description{
-            font-size: 14px;
+            font-size: 15px;
         }
         &__btn{
             &:hover{
@@ -93,10 +94,14 @@
 @media (max-width: 576px){
     .promo{
         &__title{
-            font-size: 30px;
+            max-width: 174px;
+            font-size: 36px;
         }
         &__location{
-            font-size: 18px;
+            font-size: 14px;
+        }
+        &__description{
+            font-size: 14px;
         }
     }
 }

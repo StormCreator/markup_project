@@ -1,21 +1,28 @@
 function slider(){
 
-    $(".slider").on("init", function(event, slick){
-        // $(".counter").text(parseInt(slick.currentSlide + 1) + ' of ' + slick.slideCount);
-        $(".slick-count").text(`${parseInt(slick.currentSlide + 1)} of ${slick.slideCount}`);
 
+    $(".slider").on("init", function(event, slick){
+        // console.log(slick.slideCount);
+        // console.log(slick.currentSlide);
+        $(".slick-count").text(`${parseInt(slick.currentSlide + 1)} of ${slick.slideCount/2}`);
     });
-    
+
     $(".slider").on("afterChange", function(event, slick, currentSlide){
-        $(".slick-count").text(`${parseInt(slick.currentSlide + 1)} of ${slick.slideCount}`);
+        console.log(slick.currentSlide)
+        if(currentSlide == 2){
+            $(".slick-count").text(`${parseInt(slick.currentSlide)} of ${slick.slideCount/2}`);
+        }else{
+            $(".slick-count").text(`${parseInt((slick.currentSlide/2) + 1)} of ${slick.slideCount/2}`);
+        }
+        console.log(`final ${slick.currentSlide/2}`)
     });
 
 
     $('.slider').slick({
         slidesToShow: 2,
+        slidesToScroll: 2,
         arrows: false,
-        // prevArrow: '<button type="button" class="slick-prev"><img src="../images/slider/prev-arrow.png"></button>',
-        // nextArrow: '<button type="button" class="slick-next"><img src="../images/slider/next-arrow.png"></button>',
+        infinite: false,
         responsive: [
             {
                 breakpoint: 1201,
