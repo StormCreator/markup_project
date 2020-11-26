@@ -55,8 +55,21 @@
 @media (max-width: 576px){
     .offer{
         &__wrapper{
-            grid-template: repeat(8, minmax(150px, auto)) / repeat(1, 1fr);
-            row-gap: 50px;
+            grid-template: repeat(4, minmax(100px, auto)) / repeat(2, minmax(auto, 182px));
+            justify-content: space-around  ;
+            row-gap: 25px;
+        }
+        .sentence{
+            text-align: center;
+            i{
+                font-size: 40px;
+    
+            }
+            &__descr{
+                margin: 10px auto 0 auto;
+                max-width: 140px;
+            }
         }
     }
+    
 }
