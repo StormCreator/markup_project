@@ -4,14 +4,18 @@ function animation(){
             services = document.querySelectorAll('.service');
 
 
+           
 
     titles.forEach(item => {
-        item.classList.add('wow', 'animate__animated', 'animate__fadeInUp');
+        item.classList.add('wow');
+        item.classList.add('animate__animated', 'animate__fadeInUp');
         item.style.setProperty('--animate-duration', '1.2s');
+        
+
     });
     subtitles.forEach(item => {
         item.classList.add('wow', 'animate__animated', 'animate__fadeInUp');
-        item.style.setProperty('--animate-delay', '.5s');
+        item.style.setProperty('--animate-delay', '.3s');
         item.style.setProperty('--animate-duration', '1.2s');
     });
     {
@@ -19,7 +23,7 @@ function animation(){
         services.forEach(service => {
             service.classList.add('wow', 'animate__animated', 'animate__fadeInUp');
             service.style.setProperty('--animate-duration', `${duration}s`);
-            duration += 0.3;
+            duration += 0.4;
         });
     }
   

@@ -9,9 +9,13 @@ $(document).ready(function () {
     hamburger();
     coaches();
     slider();
-    new WOW().init();
     animation();
     scrolling();
+    new WOW({
+        boxClass: 'wow',
+        animateClass: 'animated',
+        offset: 100
+    }).init();
 });
 
 
